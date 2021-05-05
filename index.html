@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <title>
+        Assignment 2 for Tommy Chiu
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Register with us!</h1>
+
+    <div class="form-wrap">
+
+        <form name="myForm" action="thank-you.html" onsubmit="return validateForm();" method="get">
+
+        <div class="username-wrap">  
+            <label for="username" id="labelUsername">Username</label>
+                <span id="usernameMsg"></span>
+            <input type="text" id="username" name="username" oninput="clearU();" onfocusout="acceptU();">
+        </div>     
+
+        <div class="pass-wrap">
+            <label for="password">Password</label>
+                    <span id="pwMsg"></span>
+                <input type="password" id="pw" name="pw" oninput="validatePw(); clearP();" onfocusout="acceptPw();">
+                    <span id="pwChecker"></span>
+        </div>
+
+        <div class="cp-wrap">
+            <label for="confirmpw">Confirm Password</label>
+                <span id="cpMsg"></span>
+                    <input type="password" id="confirmpw" name="confirmpw" oninput="clearCp();" onfocusout="acceptCp();">
+                <span id="cpChecker"></span>
+        </div>
+
+        <div class="gender-wrap">
+            <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+                <span id="genderMsg"></span>
+        </div>
+
+        <div class="email-wrap">
+            <label for="email">Email</label>
+                <input type="text" id="email" name="email" oninput="clearE();" onfocusout="acceptEm();">
+                    <span id="emailMsg"></span>
+
+        </div>
+
+        <div class="contact-wrap">
+            <label for="contactnumber">Contact Number</label>
+                <input type="text" id="contactnumber" name="contactnumber" oninput="clearCn();" onkeypress="return onlyNum(event);" onfocusout="acceptCn();">
+                    <span id="contactMsg"></span>
+
+        </div>
+
+        <div class="button-wrap">
+            <input for="submit" type="submit" value="Submit">
+            <input for="reset" type="reset" value="Clear">
+        </div>
+
+        </form>
+    </div>
+
+    <script src="scripts/script.js" refer></script>
+</body>
+</html>
