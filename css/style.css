@@ -1,6 +1,8 @@
 :root
 {
-    --clr-primary-900: #fff;
+    --clr-primary-000: #fff;
+    --clr-btnhover-800: #2c3e50;
+    --clr-accent-900: rgb(61, 58, 58);
 }
 
 *,
@@ -90,19 +92,19 @@ input[for="submit"]
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    background-color: #2c3e50;
+    background-color: var(--clr-primary-000);
     border-style:solid;
     border-radius: 1.5rem;
     display: block;
-    color: white;
+    color: var(--clr-accent-900);
     transition: .5s;
     
 }
 
 input[for="submit"]:hover 
 {
-    background-color: #0e1b29;
-    color: #ffffff;
+    background-color:var(--clr-btnhover-800);
+    color: var(--clr-primary-000);
 }
 
 input[for="submit"]:hover, 
@@ -123,18 +125,18 @@ input[for="reset"]
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    background-color: #2c3e50;
+    background-color: var(--clr-primary-000);
     border-style:solid;
     border-radius: 1.5rem;
     display: block;
-    color: white;
+    color: var(--clr-accent-900);
     transition: .5s;
 }
 
 input[for="reset"]:hover 
 {
-    background-color: #0e1b29;
-    color: #ffffff;
+    background-color: var(--clr-btnhover-800);
+    color: var(--clr-primary-000);
 }
 
 input[for="reset"]:hover, 
